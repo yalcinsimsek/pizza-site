@@ -1,0 +1,103 @@
+.menu {
+  background-color: #bf3d3d;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menuList {
+  width: 90vw; /* Yatayda daha fazla kart sığması için genişlik artırıldı */
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* Kartları yatayda 5'erli sıralama */
+  gap: 5px; /* Kartlar arası boşluk ekledik */
+  place-items: center;
+  margin-top: 20px; /* Kartların üstündeki boşluğu ayarladık */
+  margin-bottom: 20px;
+  row-gap: 20px;
+}
+
+.MenuItem {
+  width: 200px;
+  padding: 20px;
+  margin: 0; /* Kartlar arası boşluğu buradan ayarlayabilirsiniz */
+  border-radius: 10px;
+  background-color: #e0840d;
+  color: white;
+}
+
+.menuItem h1 {
+  margin-top: 0;
+}
+
+.menuTitle {
+  padding: 10px;
+  color: white;
+  font-weight: bold; 
+  font-size: 60px;
+}
+
+.buttonContainer {  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.buttonContainer button {
+  background-color: #e0840d; /* Buton arka plan rengi kirmizi */
+  color: white; /* Buton metin rengi beyaz */
+  border: none; /* Kenarlık yok */
+  padding: 10px 20px; /* İç boşluklar */
+  margin: 5px; /* Düzenleme amaçlı kenar boşluğu */
+  cursor: pointer; /* Üzerine gelince işaretçi el simgesi */
+  text-decoration: none; /* Metin altı çizgiyi kaldır */
+  border-radius: 5px; /* Kenar yumuşatma */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
+}
+
+.buttonContainer button:hover {
+  background-color: #e09b5a; /* Üzerine gelince kirmizi rengini turuncu yap */
+}
+.MenuItem button {
+  background-color: #bf3d3d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.MenuItem button:hover {
+  background-color: #e09b5a;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonContainer {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buttonContainer {
+    font-size: 14px; 
+  }
+}

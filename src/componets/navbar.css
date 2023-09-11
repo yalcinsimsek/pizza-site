@@ -1,0 +1,145 @@
+nav {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        background-color: #bf3d3d;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+}
+
+
+
+nav .title {
+
+        font-size: 1.5rem;
+        margin: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+
+
+}
+
+nav ul li {
+
+    list-style: none;
+    
+}
+
+nav ul {
+
+    display: flex;
+}
+
+
+nav ul.open {
+    display: flex;
+
+}
+
+
+.homestyle {
+    display: flex;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+nav ul li a {
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+
+
+nav ul li a:hover {
+
+    background-color: #e08d40;
+
+}
+
+
+.active {
+
+    background-color: #e08d40;
+}
+
+nav .menuu{
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+
+}
+
+nav .menuu span {
+
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+
+}
+
+@media (max-width : 480px) {
+    
+    nav .menuu {
+        display: flex;
+    }
+    nav {
+        flex-direction: column;
+        align-items: start;
+
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+
+    }
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+       
+
+    
+
+    }
+    
+    
+
+}
+
+.popup-icon{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+.popup-icon:hover{
+
+    background-color: #e08d40;
+
+}
